@@ -1,0 +1,8 @@
+version: "3"
+services:
+  miner:
+    build: .
+    container_name: xmrig-auto
+    restart: unless-stopped
+    env_file:
+      - .env
